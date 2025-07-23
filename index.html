@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Sign Up Project</title>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1> Concert Event! </h1>
+    <h2> Live Music - 8/1/25 - 12pm - Austin Tx</h2>
+    <h3> <ul>
+            <li> local bands!</li>
+            <li> food trucks!</li>
+            <li> vendors!</li>
+            <li> giveaways!</li>
+    </ul></h3>
+    <img src="/HTML and CSS/event-signup/images/stock concert.jpg" alt="concert view" width = "300" height="200"> 
+</header>
+
+<!-- Main Section -->
+<main>
+<form action="/submit" method="POST" novalidate>
+    <!-- Name Input -->
+     <fieldset>
+    <div class="form-group">
+        <label for="First Name">First Name</label>
+        <input type="text" 
+           id="first name" 
+           name="name" 
+           required 
+           minlength="1" 
+           maxlength="20"
+           pattern="[A-Za-z]+"
+           aria-describedby="name-help">
+    </div>
+    <div class="form-group">
+        <label for="Last Name">Last Name</label>
+        <input type="text" 
+           id="last name" 
+           name="name" 
+           required 
+           minlength="1" 
+           maxlength="20"
+           pattern="[A-Za-z]+"
+           aria-describedby="name-help">
+    </div>
+    </fieldset>
+    <!-- Email Input -->
+     <fieldset>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" 
+           id="email" 
+           name="email" 
+           required
+           autocomplete="email">
+    </div>
+    </fieldset>
+    <!-- Phone Number Input -->
+     <fieldset>
+     <div class="form-group">
+        <label for="phone">Phone Number (optional)</label>
+        <input type="tel" 
+           id="phone" 
+           name="phone"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           placeholder="123-456-7890">
+    </div>
+    </fieldset>
+    <!-- DOB Input -->
+     <fieldset>
+    <div class="form-group">
+        <label for="appointment">Date Of Birth</label>
+        <input type="date" 
+           id="date" 
+           name="date"
+           min="1900-01-01">
+    </div>
+    </fieldset>
+    <!-- Select Dropdown for source -->
+     <fieldset>
+    <div class="form-group">
+        <label for="how">How did you hear about this event?</label>
+        <select id="how" name="how" required>
+            <option value="">Source</option>
+                <option value="ig">Instagram</option>
+                <option value="fb">Facebook</option>
+                <option value="wom">Word of Mouth</option>
+        </select>
+    </div>
+    </fieldset>
+    <!-- Radio buttons for ticket type -->
+    <fieldset>
+        <legend>Ticket Type</legend>
+        
+        <div class="radio-group">
+            <input type="radio" id="VIP" name="ticket" value="VIP">
+            <label for="VIP">VIP</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="General" name="ticket" value="General">
+            <label for="General">General</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="Student" name="ticket" value="Student">
+            <label for="Student">Student</label>
+        </div>
+    </fieldset>
+    <!-- Checkbox for newsletter -->
+    <fieldset>
+        <legend>Student Newsletter Subscription</legend>
+        <div class="checkbox-group">
+            <input type="checkbox" id="Sign me up!" name="Student Newsletter Subscription" value="Sign me up!">
+            <label for="Sign me up!">Sign me up!</label>
+        </div>
+    </fieldset>
+    <!-- Textarea for comments-->
+    <fieldset>
+        <label for="comments">Comments / Suggestions?</label><br>
+        <textarea name="comments" id="comments"></textarea>
+    </fieldset>
+    <!-- Submit / Reset Buttons -->
+    <fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset>
+</form>
+</main>
+
+<!-- 2nd Section for parking instructions -->
+<section>
+    <p>Parking can be found behind the administration building!</p>
+</section>
+
+<!-- Footer Section for contact info -->
+<footer>
+    <p>Contact Information: sample@email.com, 123-456-7890
+    </p>
+</footer>
+    
+</body>
+</html>
