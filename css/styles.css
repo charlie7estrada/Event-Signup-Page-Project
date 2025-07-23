@@ -12,18 +12,17 @@ h1 {
     color: #0f0f0f;
     margin-bottom: 2rem;
 }
-
 h2 {
     text-align: center;
     color: #0f0f0f;
     margin-bottom: 2rem;
 }
-
 h3 {
     text-align: center;
     color: #0f0f0f;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
 }
+
 /* centers unordered list */
 ul.myUL {
     display: inline-block;
@@ -41,9 +40,19 @@ input:focus {
     outline: 3px solid #f2ffa7bd;
     outline-offset: 2px;
 }
+/* formatting form section */
 form {
     display: inline-block;
     outline: 3px solid #f2ffa7bd; 
     padding: 9px;
-    
 }
+.form-group {
+    margin: 10px;
+}
+.radio-group {
+    margin: 10px;
+}
+.checkbox-group {
+    margin: 10px;
+}
+
