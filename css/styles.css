@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    background-color: #a7beffd0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #0f0f0f;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center;
+    color: #0f0f0f;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    text-align: center;
+    color: #0f0f0f;
+    margin-bottom: 2rem;
+}
+/* centers unordered list */
+ul.myUL {
+    display: inline-block;
+    text-align: center;
+}
+/* centers images */
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 9px;
+}
+/* focus state outline in form  */
+input:focus {
+    outline: 3px solid #f2ffa7bd;
+    outline-offset: 2px;
+}
+form {
+    display: inline-block;
+    outline: 3px solid #f2ffa7bd; 
+    padding: 9px;
+    
+}
